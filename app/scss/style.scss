@@ -1,0 +1,537 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../assets/fonts/PTSans-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+$font-size-header: 48px;
+$font-size-large: 24px;
+$font-size-normal: 16px;
+$font-size-link: 18px;
+$font-size-header-lap: 30px;
+
+$color-header: #232323;
+$color-normal: #585858;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-hover: #004289;
+
+* {
+  box-sizing: border-box;
+  transition: ease .3s;
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: $font-size-normal;
+  color: $color-normal;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  color: $color-header;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container-h100 {
+  height: 100%;
+}
+
+.container-relative {
+  position: relative;
+}
+
+.section-header {
+  font-size: $font-size-header;
+}
+
+.link {
+  font-size: $font-size-link;
+  position: relative;
+  &:hover {
+    color: $color-hover;
+  }
+  &:hover::after {
+    content: url("./assets/images/arrow-blue.svg");
+  }
+}
+
+.link-arrow-white {
+  color: $color-white;
+  &::after {
+    content: url("./assets/images/arrow-white.svg");
+    position: absolute;
+    margin-left: 8px;
+  }
+}
+
+.inner {
+  margin-top: 138px;
+  height: 550px;
+  background-image: url("./assets/images/inner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__block {
+    position: relative;
+  }
+  &__tape {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 589px;
+    background: linear-gradient(
+      162.65deg,
+      rgb(0%, 26%, 54%, 0.9),
+      rgb(0%, 21%, 43%, 0.9)
+    );
+    padding: 122px 50px 113px;
+  }
+  &__header {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: $font-size-header;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+  &__btn {
+    margin-top: 50px;
+    width: 200px;
+    height: 65px;
+    font-size: 18px;
+    background-color: $color-white;
+    color: $color-header;
+    transition: ease 0.3s;
+    &:hover {
+      background-color: #b5c4d4;
+    }
+  }
+}
+
+// Мы производим (Produce)
+.produce {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &__item {
+    position: relative;
+    padding-bottom: 44px;
+    flex-basis: 386px;
+    display: block;
+  }
+  &__item--first {
+    background-color: #004289;
+    .produce__descr {
+      max-width: 261px;
+    }
+    .produce__image {
+      max-width: 256px;
+    }
+  }
+  &__item--second {
+    background-color: #175292;
+    .produce__descr {
+      max-width: 319px;
+    }
+    .produce__image {
+      max-width: 272px;
+    }
+  }
+  &__item--third {
+    background-color: #c09a5d;
+    .produce__title {
+      max-width: 256px;
+      margin-top: 25px;
+    }
+  }
+  &__title {
+    font-size: $font-size-large;
+    font-weight: normal;
+    color: $color-white;
+  }
+  &__descr {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    line-height: 140%;
+    color: $color-white;
+  }
+  &__image-block {
+    min-height: 288px;
+    max-height: 288px;
+    display: flex;
+    padding-bottom: 45px;
+    padding-top: 62px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__about-block {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    bottom: 20px;
+    position: absolute;
+  }
+}
+
+
+// Benefits (Преимущества работы с Ruspan)
+
+.benefits {
+  &__list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    max-width: 589px;
+    padding: 40px 50px;
+    border: 1px solid #D7D7D7;
+  }
+  &__item:nth-child(odd) {
+    margin-right: 17px;
+  }
+  &__item:nth-child(1), &__item:nth-child(2) {
+    margin-bottom: 22px;
+  }
+  &__title {
+    margin-top: 40px;
+    font-size: $font-size-large;
+  }
+  &__descr {
+    margin-top: 15px;
+  }
+  &__icon {
+    max-height: 74px;
+    max-width: 74px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .produce {
+    &__item {
+      flex-basis: 310px;
+      padding-bottom: 27px;
+    }
+    &__item--first {
+      .produce__descr {
+        max-width: 272px;
+      }
+      .produce__image {
+        max-width: 210px;
+      }
+    }
+    &__item--second {
+      .produce__descr {
+        max-width: 268px;
+      }
+      .produce__image {
+        max-width: 222px;
+      }
+    }
+    &__image-block {
+      min-height: 222px;
+      max-height: 222px;
+      padding-left: 25px;
+      justify-content: unset;
+    }
+    &__descr {
+      margin-top: 20px;
+      font-size: $font-size-normal;
+    }
+    &__link {
+      bottom: 10px;
+      position: absolute;
+      font-size: $font-size-normal;
+    }
+  }
+
+  .benefits {
+    &__item {
+      max-width: 472px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 16px;
+    }
+  }
+}
+
+
+@media (min-width: 640px) and (max-width: 999px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .inner {
+    position: relative;
+    .container-relative {
+      position: static;
+    }
+    &__tape {
+      width: initial;
+      padding: 20px;
+      bottom: 24px;
+      top: 222px;
+      right: 0;
+      left: 0;
+    }
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__btn {
+      width: 300px;
+    }
+  }
+
+  .produce {
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    &__item {
+      padding-left: 20px;
+      display: flex;
+      flex-basis: 100%;
+      padding-bottom: initial;
+    }
+    &__item:not(:first-child){
+      margin-top: 10px;
+    }
+    &__item--first {
+      .produce__descr {
+        max-width: 230px;
+      }
+      .produce__image {
+        max-width: 198px;
+      }
+    }
+    &__item--second {
+      .produce__title {
+        max-width: 272px;
+      }
+      .produce__descr {
+        max-width: 269px;
+      }
+      .produce__image {
+        max-width: 203px;
+      }
+    }
+    &__item--third {
+      min-height: 220px;
+      .produce__title {
+        max-width: 220px;
+        margin-top: 0;
+      }
+    }
+    &__image-block {
+      min-height: initial;
+      max-height: initial;
+      flex-basis: 290px;
+      flex-shrink: 0;
+      padding-top: 44px;
+      padding-bottom: 30px;
+      align-items: flex-start;
+    }
+    &__about-block {
+      padding-left: initial;
+      padding-right: initial;
+      padding-top: 30px;
+      padding-bottom: 52px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__descr {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      font-size: $font-size-normal;
+    }
+    &__link {
+      bottom: 30px;
+      font-size: $font-size-normal;
+    }
+  }
+
+  .benefits {
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      margin-top: 30px;
+    }
+    &__item {
+      max-width: 295px;
+      padding: 24px 15px 24px 20px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 10px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-size: 22px;
+    }
+    &__descr {
+      font-size: 16px;
+    }
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .container {
+    min-width: 320px;
+    max-width: 639px;
+    padding: 0 10px;
+  }
+
+  .inner {
+    position: relative;
+    .container-relative {
+      position: static;
+    }
+    &__tape {
+      width: initial;
+      padding: 20px 10px;
+      bottom: 24px;
+      top: 222px;
+      right: 0;
+      left: 0;
+    }
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__btn {
+      width: 300px;
+    }
+  }
+
+  .produce {
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    &__item {
+      flex-direction: column;
+      padding: 0 15px;
+      flex-basis: auto;
+    }
+    &__item:not(:first-child){
+      margin-top: 10px;
+    }
+    &__item--first {
+      .produce__image {
+        max-width: 198px;
+      }
+    }
+    &__item--second {
+      .produce__image {
+        max-width: 203px;
+      }
+    }
+    &__item--third {
+      min-height: 310px;
+    }
+    &__image-block {
+      min-height: 190px;
+      max-height: 190px;
+    }
+    &__about-block {
+      padding: initial;
+      padding-bottom: 60px;
+    }
+    &__descr {
+      margin-top: 15px;
+      padding-bottom: initial;
+    }
+  }
+
+  .benefits {
+    &__header {
+      font-size: 30px;
+    }
+    &__list {
+      margin-top: 20px;
+    }
+    &__item {
+      padding: 24px 14px 25px 20px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 0px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  
+}

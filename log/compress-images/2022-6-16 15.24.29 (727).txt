@@ -1,0 +1,8 @@
+File from: [app/assets/images/inner.png]
+
+File to: [dist/assets/images/inner.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: C:\Users\Sneik\Desktop\Ruspan\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o dist/assets/images/inner.png app/assets/images/inner.png
+  error: 'dist/assets/images/inner.png' exists; not overwriting
