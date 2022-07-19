@@ -1,0 +1,131 @@
+@media (min-width: 320px) and (max-width: 639px) {
+  .container {
+    min-width: 320px;
+    max-width: 639px;
+    padding: 0 10px;
+  }
+
+  .inner {
+    position: relative;
+    .container-relative {
+      position: static;
+    }
+    &__tape {
+      width: initial;
+      padding: 20px 10px;
+      bottom: 24px;
+      top: 222px;
+      right: 0;
+      left: 0;
+    }
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__btn {
+      width: 300px;
+    }
+  }
+
+  .produce {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    &__item {
+      flex-direction: column;
+      padding: 0 15px;
+      flex-basis: auto;
+    }
+    &__item:not(:first-child){
+      margin-top: 10px;
+    }
+    &__item--first {
+      .produce__image {
+        max-width: 198px;
+      }
+    }
+    &__item--second {
+      .produce__image {
+        max-width: 203px;
+      }
+    }
+    &__item--third {
+      min-height: 310px;
+    }
+    &__image-block {
+      min-height: 190px;
+      max-height: 190px;
+    }
+    &__about-block {
+      padding: initial;
+      padding-bottom: 60px;
+    }
+    &__descr {
+      margin-top: 15px;
+      padding-bottom: initial;
+      font-size: $font-size-normal;
+    }
+  }
+
+  .benefits {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__header {
+      font-size: 30px;
+    }
+    &__list {
+      margin-top: 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item {
+      padding: 24px 14px 25px 20px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 0px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &__title {
+      margin-top: 22px;
+      font-size: 22px;
+    }
+    &__descr {
+      font-size: $font-size-normal;
+    }
+  }
+
+  .sector {
+    display: none;
+    &-mobile {
+      &__header {
+        font-size: $font-size-header-lap;
+      }
+      display: block;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &__slider {
+        margin-top: 20px;
+        display: flex;
+        overflow: auto;
+      }
+      &__item {
+        margin-right: 10px;
+      }
+      &__image {
+        max-width: 260px;
+      }
+      &__title {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  
+}

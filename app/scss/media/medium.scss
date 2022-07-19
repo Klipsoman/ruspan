@@ -1,0 +1,139 @@
+@media (min-width: 640px) and (max-width: 999px) {
+  .inner {
+    position: relative;
+    .container-relative {
+      position: static;
+    }
+    &__tape {
+      width: initial;
+      padding: 20px;
+      bottom: 24px;
+      top: 222px;
+      right: 0;
+      left: 0;
+    }
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__btn {
+      width: 300px;
+    }
+  }
+
+  .produce {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    &__item {
+      padding-left: 20px;
+      display: flex;
+      flex-basis: 100%;
+      padding-bottom: initial;
+    }
+    &__item:not(:first-child){
+      margin-top: 10px;
+    }
+    &__item--first {
+      .produce__image {
+        max-width: 198px;
+      }
+    }
+    &__item--second {
+      .produce__title {
+        max-width: 272px;
+      }
+      .produce__image {
+        max-width: 203px;
+      }
+    }
+    &__item--third {
+      min-height: 220px;
+      .produce__title {
+        max-width: 220px;
+        margin-top: 0;
+      }
+    }
+    &__image-block {
+      min-height: initial;
+      max-height: initial;
+      flex-basis: 50%;
+      flex-shrink: 0;
+      padding-top: 44px;
+      padding-bottom: 30px;
+      align-items: flex-start;
+    }
+    &__about-block {
+      padding-left: initial;
+      padding-right: 15px;
+      padding-top: 30px;
+      padding-bottom: 52px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__descr {
+      margin-top: 15px;
+      padding-bottom: 15px;
+      font-size: $font-size-normal;
+    }
+    &__link {
+      bottom: 30px;
+      font-size: $font-size-normal;
+    }
+  }
+
+  .benefits {
+    padding-top: 30px;
+    &__header {
+      font-size: $font-size-header-lap;
+    }
+    &__list {
+      margin-top: 30px;
+    }
+    &__item {
+      padding: 24px 15px 25px 20px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 10px;
+    }
+    &__title {
+      margin-top: 20px;
+      font-size: 22px;
+    }
+    &__descr {
+      font-size: $font-size-normal;
+    }
+  }
+
+  .sector {
+    display: none;
+    &-mobile {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      display: block;
+      &__header {
+        font-size: $font-size-header-lap;
+      }
+      &__slider {
+        margin-top: 30px;
+        display: flex;
+        overflow: auto;
+      }
+      &__item {
+        margin-right: 10px;
+      }
+      &__title {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+
+}

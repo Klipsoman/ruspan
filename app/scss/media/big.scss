@@ -1,0 +1,59 @@
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .produce {
+    &__item {
+      padding-bottom: 27px;
+    }
+    &__item--first {
+      .produce__image {
+        max-width: 210px;
+      }
+    }
+    &__item--second {
+      .produce__image {
+        max-width: 222px;
+      }
+    }
+    &__image-block {
+      min-height: 222px;
+      max-height: 222px;
+      padding-left: 25px;
+      justify-content: unset;
+    }
+    &__descr {
+      margin-top: 20px;
+      font-size: $font-size-normal;
+    }
+    &__link {
+      bottom: 10px;
+      position: absolute;
+      font-size: $font-size-normal;
+    }
+  }
+
+  .benefits {
+    &__item {
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 25px;
+      padding-bottom: 27px;
+    } 
+    &__item:nth-child(odd) {
+      margin-right: 16px;
+    }
+    &__descr {
+      font-size: $font-size-normal;
+    }
+  }
+
+  .sector {
+    &__left {
+      padding-right: 38px;
+    }
+    &__right {
+      padding-top: 14px;
+    }
+    &__item {
+      font-size: 16px;
+    }
+  }
+}
