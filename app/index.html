@@ -7,180 +7,715 @@
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <script src="assets/js/index.js"></script>
   </head>
   <body>
-    
-    <div class="wrapper">
-
-    <section class="inner">
-      <div class="container container-relative container-h100">
-        <div class="inner__tape">
-          <h1 class="inner__header">
-            Производство <br />
-            сэндвич-панелей <br />и быстровозводимых <br />
-            зданий
-          </h1>
-          <button class="btn inner__btn">Оставить заявку</button>
+    <!-- WRAPPER -->
+    <div class="wrapper" id="wrapper">
+      <header class="header" id="header">
+        <div class="container">
+          <div class="header__content">
+            <a class="header__logo" href="">
+              <img src="assets/images/Logo.svg" alt="" />
+            </a>
+            <nav class="header__navigation">
+              <ul>
+                <li>
+                  <a href="">О компании</a>
+                </li>
+                <li>
+                  <a href="">Продукция</a>
+                </li>
+                <li>
+                  <a href="">Секторы рынка</a>
+                </li>
+                <li>
+                  <a href="">Проекты</a>
+                </li>
+                <li>
+                  <a href="">Новости</a>
+                </li>
+                <li>
+                  <a href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__tel telephone">
+              <a href="tel:+78002500765">+7 800 250-07-65</a>
+            </div>
+            <div class="header__additional">
+              <a class="header__email" href="mailto:info@ruspan.su"
+                >info@ruspan.su</a
+              >
+              <a class="header__locale" href="#">EN</a>
+              <span class="header__search">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="7.5"
+                    cy="7.5"
+                    r="4.8033"
+                    transform="rotate(-45 7.5 7.5)"
+                    stroke="#9F9F9F"
+                  />
+                  <line
+                    x1="10.625"
+                    y1="10.6464"
+                    x2="14.7917"
+                    y2="14.8131"
+                    stroke="#9F9F9F"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="header__content-mobile">
+            <a class="header__logo-mobile" href="">
+              <img src="assets/images/Logo.svg" alt="" />
+            </a>
+            <div class="header__burger" id="burger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header__menu-mobile">
+              <nav class="header__navigation">
+                <ul>
+                  <li>
+                    <a href="">О компании</a>
+                  </li>
+                  <li>
+                    <a href="">Продукция</a>
+                  </li>
+                  <li>
+                    <a href="">Секторы рынка</a>
+                  </li>
+                  <li>
+                    <a href="">Проекты</a>
+                  </li>
+                  <li>
+                    <a href="">Новости</a>
+                  </li>
+                  <li>
+                    <a href="">Контакты</a>
+                  </li>
+                </ul>
+                <div class="line"></div>
+              </nav>
+              <div class="header__tel-mobile telephone">
+                <a href="tel:+78002500765">+7 800 250-07-65</a>
+              </div>
+              <div class="header__additional-mobile">
+                <a class="header__email" href="mailto:info@ruspan.su"
+                  >info@ruspan.su</a
+                >
+                <a class="header__locale" href="#">EN</a>
+                <span class="header__search">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="7.5"
+                      cy="7.5"
+                      r="4.8033"
+                      transform="rotate(-45 7.5 7.5)"
+                      stroke="#9F9F9F"
+                    />
+                    <line
+                      x1="10.625"
+                      y1="10.6464"
+                      x2="14.7917"
+                      y2="14.8131"
+                      stroke="#9F9F9F"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <section class="produce">
-      <div class="container">
-        <div class="produce__content">
-          <h2 class="produce__header section-header">Мы производим</h2>
-          <div class="produce__list">
-            <div class="produce__item produce__item--first">
-              <div class="produce__image-block">
+      <section class="inner">
+        <div class="container container-relative container-h100">
+          <div class="inner__tape">
+            <h1 class="inner__header">
+              Производство <br />
+              сэндвич-панелей <br />и быстровозводимых <br />
+              зданий
+            </h1>
+            <button class="btn inner__btn">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCE -->
+
+      <section class="produce">
+        <div class="container">
+          <div class="produce__content">
+            <h2 class="produce__header section-header">Мы производим</h2>
+            <div class="produce__list">
+              <div class="produce__item produce__item--first">
+                <div class="produce__image-block">
+                  <img
+                    class="produce__image"
+                    src="assets/images/panel.png"
+                    alt=""
+                  />
+                </div>
+                <div class="produce__about-block">
+                  <h3 class="produce__title">Сэндвич-панели</h3>
+                  <p class="produce__descr">
+                    Стеновые и кровельные сэндвич-панели на основе наполнителей
+                    из минеральной ваты и PIR, а также фасонные и доборные
+                    элементы.
+                  </p>
+                  <a class="produce__link link link-arrow" href="#"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+              <div class="produce__item produce__item--second">
+                <div class="produce__image-block">
+                  <img
+                    class="produce__image"
+                    src="assets/images/building.png"
+                    alt=""
+                  />
+                </div>
+                <div class="produce__about-block">
+                  <h3 class="produce__title">
+                    Быстровозводимые здания и прогонные системы
+                  </h3>
+                  <p class="produce__descr">
+                    Оптимальное решение для строительства административных,
+                    коммерческих, сельскохозяйственных, складских и промышленных
+                    объектов. Сочетают в себе баланс конструктивных решений,
+                    стоимости и скорости монтажа.
+                  </p>
+                  <a class="produce__link link link-arrow" href="#"
+                    >Подробнее
+                  </a>
+                </div>
+              </div>
+              <div class="produce__item produce__item--third">
+                <div class="produce__about-block">
+                  <h3 class="produce__title">
+                    Проектирование и техническая поддержка на всех этапах
+                    строительства
+                  </h3>
+                  <a class="produce__link link link-arrow" href="#"
+                    >Подробнее</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+
+      <section class="benefits">
+        <div class="container">
+          <h2 class="benefits__header section-header">
+            Преимущества работы с Ruspan
+          </h2>
+          <div class="benefits__list">
+            <div class="benefits__item">
+              <img
+                class="benefits__icon"
+                src="./assets/images/quality-logo.svg"
+                alt=""
+              />
+              <h3 class="benefits__title">Подтверждённое качество</h3>
+              <p class="benefits__descr">
+                Надёжность технических решений подтверждена натурными
+                испытаниями и сертификатами. Мы используем сырьё и материалы от
+                топовых поставщиков, жёстко контролируем допуски и стандарты
+                качества на всех этапах производства.
+              </p>
+            </div>
+
+            <div class="benefits__item">
+              <img
+                class="benefits__icon"
+                src="./assets/images/team-logo.svg"
+                alt=""
+              />
+              <h3 class="benefits__title">Команда экспертов</h3>
+              <p class="benefits__descr">
+                Мы успешно работаем с 2008 г. в России и с 1965 г. в мире. Наша
+                команда переняла лучшее из европейского и российского опыта.
+                Наши сотрудники — это профессионалы с многолетним опытом работы
+                в строительной отрасли.
+              </p>
+            </div>
+
+            <div class="benefits__item">
+              <img
+                class="benefits__icon"
+                src="./assets/images/union-logo.svg"
+                alt=""
+              />
+              <h3 class="benefits__title">Комплексный подход</h3>
+              <p class="benefits__descr">
+                Мы оказываем проектную поддержку на всех стадиях от
+                проектирования до сдачи объектов в эксплуатацию. Это позволяет
+                оптимизировать выбор материалов, снизить риски некомплектных
+                поставок и исключить ошибки реализации проекта.
+              </p>
+            </div>
+
+            <div class="benefits__item">
+              <img
+                class="benefits__icon"
+                src="./assets/images/key-logo.svg"
+                alt=""
+              />
+              <h3 class="benefits__title">
+                Объекты под ключ по всей России и СНГ
+              </h3>
+              <p class="benefits__descr">
+                Обширная сеть партнеров позволяет реализовать объекты любой
+                сложности во всех регионах. Наши партнеры предоставляют услуги
+                по генеральному проектированию, строительно-монтажным работам,
+                поставляют сопутствующие материалы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTOR -->
+
+      <section class="sector">
+        <div class="container">
+          <div class="sector__content">
+            <div class="sector__left">
+              <h1 class="sector__header section-header">Секторы рынка</h1>
+              <div class="sector__image-block">
                 <img
-                  class="produce__image"
-                  src="assets/images/panel.png"
+                  class="sector__image"
+                  src="./assets/images/sector.jpg"
                   alt=""
                 />
               </div>
-              <div class="produce__about-block">
-                <h3 class="produce__title">Сэндвич-панели</h3>
-                <p class="produce__descr">
-                  Стеновые и кровельные сэндвич-панели на основе наполнителей
-                  из минеральной ваты и PIR, а также фасонные и доборные
-                  элементы.
-                </p>
-                <a class="produce__link link link-arrow-white" href="#"
-                  >Подробнее</a
-                >
-              </div>
             </div>
-            <div class="produce__item produce__item--second">
-              <div class="produce__image-block">
+            <div class="sector__right">
+              <ul class="sector__list">
+                <li class="sector__item">
+                  <a class="sector__link" href="#">Торговые здания</a>
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#"
+                    >Логистические здания и склады</a
+                  >
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#">Производственные здания</a>
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#"
+                    >Административные и общественные здания</a
+                  >
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#"
+                    >Сельскохозяйственные здания</a
+                  >
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#">Спортивные сооружения</a>
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#"
+                    >Холодильные здания и комплексы</a
+                  >
+                </li>
+                <li class="sector__item">
+                  <a class="sector__link" href="#">Пищевые производства</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sector-mobile">
+        <div class="container">
+          <h1 class="sector-mobile__header section-header">Секторы рынка</h1>
+
+          <div class="sector-mobile__slider">
+            <div class="sector-mobile__item">
+              <div class="sector-mobile__image-block">
                 <img
-                  class="produce__image"
-                  src="assets/images/building.png"
+                  class="sector-mobile__image"
+                  src="./assets/images/sector.jpg"
                   alt=""
                 />
               </div>
-              <div class="produce__about-block">
-                <h3 class="produce__title">
-                  Быстровозводимые здания и прогонные системы
-                </h3>
-                <p class="produce__descr">
-                  Оптимальное решение для строительства административных,
-                  коммерческих, сельскохозяйственных, складских и промышленных
-                  объектов. Сочетают в себе баланс конструктивных решений,
-                  стоимости и скорости монтажа.
-                </p>
-                <a class="produce__link link link-arrow-white" href="#"
-                  >Подробнее
-                </a>
+              <span class="sector-mobile__title">Торговые здания</span>
+            </div>
+
+            <div class="sector-mobile__item">
+              <div class="sector-mobile__image-block">
+                <img
+                  class="sector-mobile__image"
+                  src="./assets/images/sector.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="sector-mobile__title"
+                >Логистические здания и склады</span
+              >
+            </div>
+
+            <div class="sector-mobile__item">
+              <div class="sector-mobile__image-block">
+                <img
+                  class="sector-mobile__image"
+                  src="./assets/images/sector.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="sector-mobile__title"
+                >Логистические здания и склады</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects__header section-header">Выполненные проекты</h2>
+          <div class="projects__slider slider"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about__header about__header-mobile section-header">
+            О компании
+          </h2>
+          <div class="about__content">
+            <div class="about__left">
+              <h2 class="about__header section-header">О компании</h2>
+              <p class="about__descr">
+                Компания Ruspan (ранее — Kingspan) является ведущим
+                производителем сэндвич-панелей и каркасов для быстро­возводимых
+                зданий, а также оказывает проектную под­держку для нежилого
+                строительства на всех стадиях — от проектирования до сдачи
+                в эксплуатацию. Мы создаем высокоэффективные здания как готовые
+                ре­шения для наших клиентов. Продукция компании представ­лена
+                в России и странах СНГ.
+              </p>
+              <ul class="about__stats">
+                <li>
+                  <span class="about__number">>750</span
+                  ><span class="about__info"
+                    >строительных проектов <br />
+                    в России и СНГ в год</span
+                  >
+                </li>
+                <li>
+                  <span class="about__number">2</span
+                  ><span class="about__info"
+                    >производственные <br />
+                    площадки</span
+                  >
+                </li>
+                <li>
+                  <span class="about__number">180</span
+                  ><span class="about__info">сотрудников</span>
+                </li>
+              </ul>
+              <div class="about__link">
+                <a href="" class="link link-arrow">Подробнее о компании</a>
               </div>
             </div>
-            <div class="produce__item produce__item--third">
-              <div class="produce__about-block">
-                <h3 class="produce__title">
-                  Проектирование и техническая поддержка на всех этапах строительства
-                </h3>
-                <a class="produce__link link link-arrow-white" href="#"
-                  >Подробнее</a
-                >
+            <div class="about__right">
+              <div class="about__image-block">
+                <img
+                  class="about__image about__image--large"
+                  src="assets/images/about.jpg"
+                  alt=""
+                />
+                <img
+                  class="about__image about__image--big"
+                  src="assets/images/about-big.jpg"
+                  alt=""
+                />
+                <img
+                  class="about__image about__image--small"
+                  src="assets/images/about-small.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-
+          </div>
+          <ul class="about__stats-mobile">
+            <li>
+              <span class="about__number">>750</span
+              ><span class="about__info"
+                >строительных проектов <br />
+                в России и СНГ в год</span
+              >
+            </li>
+            <li>
+              <span class="about__number">2</span
+              ><span class="about__info"
+                >производственные <br />
+                площадки</span
+              >
+            </li>
+            <li>
+              <span class="about__number">180</span
+              ><span class="about__info">сотрудников</span>
+            </li>
+          </ul>
+          <div class="about__link-mobile">
+            <a href="" class="link link-arrow">Подробнее о компании</a>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <section class="benefits">
-      <div class="container">
-        <h2 class="benefits__header section-header">
-          Преимущества работы с Ruspan
-        </h2>
-        <div class="benefits__list">
-          <div class="benefits__item">
-            <img class="benefits__icon" src="./assets/images/quality-logo.svg">
-            <h3 class="benefits__title">Подтверждённое качество</h3>
-            <p class="benefits__descr">Надёжность технических решений подтверждена натурными испытаниями и сертификатами. Мы используем сырьё и материалы от топовых поставщиков, жёстко контролируем допуски и стандарты качества на всех этапах производства.</p>
-          </div>
+      </section>
 
-          <div class="benefits__item">
-            <img class="benefits__icon" src="./assets/images/team-logo.svg">
-            <h3 class="benefits__title">Команда экспертов</h3>
-            <p class="benefits__descr">Мы успешно работаем с 2008 г. в России и с 1965 г. в мире. Наша команда переняла лучшее из европейского и российского опыта. Наши сотрудники — это профессионалы с многолетним опытом работы в строительной отрасли.</p>
-          </div>
+      <!-- REVIEWS -->
 
-          <div class="benefits__item">
-            <img class="benefits__icon" src="./assets/images/union-logo.svg">
-            <h3 class="benefits__title">Комплексный подход</h3>
-            <p class="benefits__descr">Мы оказываем проектную поддержку на всех стадиях от проектирования до сдачи объектов в эксплуатацию. Это позволяет оптимизировать выбор материалов, снизить риски некомплектных поставок и исключить ошибки реализации проекта.
-            </p>
-          </div>
-
-          <div class="benefits__item">
-            <img class="benefits__icon" src="./assets/images/key-logo.svg">
-            <h3 class="benefits__title">Объекты под ключ по всей России и СНГ</h3>
-            <p class="benefits__descr">Обширная сеть партнеров позволяет реализовать объекты любой сложности во всех регионах. Наши партнеры предоставляют услуги по генеральному проектированию, строительно-монтажным работам, поставляют сопутствующие материалы.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-<!-- SECTOR -->
-
-    <section class="sector">
-      <div class="container">
-        <div class="sector__content">
-          <div class="sector__left">
-            <h1 class="sector__header section-header">Секторы рынка</h1>
-            <div class="sector__image-block">
-              <img class="sector__image" src="./assets/images/sector1.jpg" alt="">
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__header section-header">Отзывы</h2>
+          <div class="reviews__content">
+            <div class="reviews__left">
+              <div class="reviewer">
+                <div class="reviewer__avatar">
+                  <img src="assets/images/reviewer.jpg" alt="" />
+                </div>
+                <div class="reviewer__info">
+                  <div class="reviewer__name">Ардаков Игорь Герасимович</div>
+                  <div class="reviewer__position">
+                    Генеральный директор компании
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="sector__right">
-            <ul class="sector__list">
-              <li class="sector__item">Торговые здания</li>
-              <li class="sector__item">Логистические здания и склады</li>
-              <li class="sector__item">Производственные здания</li>
-              <li class="sector__item">Административные и общественные здания</li>
-              <li class="sector__item">Сельскохозяйственные здания</li>
-              <li class="sector__item">Спортивные сооружения</li>
-              <li class="sector__item">Холодильные здания и комплексы</li>
-              <li class="sector__item">Пищевые производства</li>
-            </ul>
+            <div class="reviews__right">
+              <div class="reviews__review">
+                «Повседневная практика показывает, что реализация намеченных
+                плановых заданий, а также свежий взгляд на привычные вещи —
+                безусловно открывает новые горизонты для глубокомысленных
+                рассуждений. Имеется спорная точка зрения, гласящая примерно
+                следующее: базовые сценарии поведения пользователей освещают
+                чрезвычайно интересные особенности картины в целом, однако
+                конкретные выводы, разумеется, превращены в посмешище, хотя само
+                их существование приносит несомненную пользу.»
+              </div>
+              <div class="reviews__arrows arrows">
+                <div class="arrows__left"></div>
+                <div class="arrows__right"></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="sector-mobile">
-      <div class="container">
-        <h1 class="sector-mobile__header section-header">Секторы рынка</h1>
+      <!-- CLIENTS -->
 
-        <div class="sector-mobile__slider">
-
-          <div class="sector-mobile__item">
-            <div class="sector-mobile__image-block">
-              <img class="sector-mobile__image" src="./assets/images/sector1.jpg" alt="">
+      <section class="clients">
+        <div class="container">
+          <h2 class="clients__header section-header">Наши клиенты</h2>
+          <div class="clients__list">
+            <div class="clients__item">
+              <img src="assets/images/clients1.svg" alt="" />
             </div>
-            <span class="sector-mobile__title">Торговые здания</span>
-          </div>
-
-          <div class="sector-mobile__item">
-            <div class="sector-mobile__image-block">
-              <img class="sector-mobile__image" src="./assets/images/sector1.jpg" alt="">
+            <div class="clients__item">
+              <img src="assets/images/clients2.svg" alt="" />
             </div>
-            <span class="sector-mobile__title">Логистические здания и склады</span>
-          </div>
-
-          <div class="sector-mobile__item">
-            <div class="sector-mobile__image-block">
-              <img class="sector-mobile__image" src="./assets/images/sector1.jpg" alt="">
+            <div class="clients__item">
+              <img src="assets/images/clients3.svg" alt="" />
             </div>
-            <span class="sector-mobile__title">Логистические здания и склады</span>
+            <div class="clients__item">
+              <img src="assets/images/clients4.svg" alt="" />
+            </div>
+            <div class="clients__item">
+              <img src="assets/images/clients5.svg" alt="" />
+            </div>
+            <div class="clients__item">
+              <img src="assets/images/clients6.svg" alt="" />
+            </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- FOOTER -->
+
+      <footer class="footer">
+        <div class="request">
+          <div class="container">
+            <div class="request__content">
+              <div class="request__left">
+                <h2 class="request__header section-header">Оставьте заявку</h2>
+                <p class="request__descr">
+                  Наши менеджеры ответят на ваши вопросы, рассчитают стоимость
+                  услуг и подготовят индивидуальное коммерческое предложение
+                </p>
+              </div>
+              <div class="request__right">
+                <form class="request__form form" action="">
+                  <div class="form__item">
+                    <input class="form__input" type="text" placeholder="Имя*" />
+                  </div>
+                  <div class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Телефон*"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <input
+                      class="form__input"
+                      type="mail"
+                      placeholder="E-mail*"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <textarea
+                      class="form__textarea"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Сообщение"
+                    ></textarea>
+                  </div>
+                  <button class="form__btn" type="submit">
+                    Оставить заявку
+                  </button>
+                </form>
+                <div class="request__policy">
+                  Нажимая на кнопку «Оставить заявку», вы соглашаетесь с
+                  Политикой конфиденциальности
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contacts -->
+
+        <div class="contacts">
+          <div class="container">
+            <div class="contacts__content">
+              <div class="contacts__left">
+                <div class="contacts__header-block">
+                  <h2 class="contacts__header section-header">Контакты</h2>
+                </div>
+                <div class="contacts__telmail">
+                  <div class="contacts__tel">+7 800 250-07-65</div>
+                  <div class="contacts__tel">+7 800 250-07-65</div>
+                  <div class="contacts__mail">info@ruspan.su</div>
+                </div>
+              </div>
+
+              <div class="contacts__right">
+                <div class="contacts__item">
+                  <div class="contacts__title">офис</div>
+                  <div class="contacts__descr">
+                    196158, Россия, Санкт-Петербург, Пулковское шоссе, дом 28,
+                    литера А, офис 1403
+                  </div>
+                </div>
+
+                <div class="contacts__item">
+                  <div class="contacts__title">Мы в соцсетях</div>
+                  <div class="contacts__descr">
+                    <a class="contacts__link link link-arrow" href=""
+                      >Вконтакте</a
+                    >
+                  </div>
+                </div>
+
+                <div class="contacts__item">
+                  <div class="contacts__title">Завод на Северо-Западе</div>
+                  <div class="contacts__descr">
+                    188302, Ленинградская обл., д. Малые Колпаны Гатчинского
+                    района, ул. Кооперативная, д. 1а
+                  </div>
+                </div>
+
+                <div class="contacts__item">
+                  <div class="contacts__title">Завод на Юге</div>
+                  <div class="contacts__descr">
+                    357107, Невинномысск, ул. Низяева, д. 1В
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- News -->
+
+        <div class="news">
+          <div class="container">
+            <h2 class="news__header section-header">Новости Ruspan</h2>
+
+            <div class="news__content">
+              <div class="news__item">
+                <div class="news__image-block">
+                  <img src="assets/images/news1.png" alt="" />
+                </div>
+                <div class="news__info">
+                  <div class="news__date">5 апреля 2022</div>
+                  <div class="news__title">
+                    Компания Kingspan передаёт свои активы в России в управление
+                    российскому менеджменту
+                  </div>
+                  <div class="news__more">
+                    <a class="news__btn link link-border" href="#"
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="news__item">
+                <div class="news__image-block">
+                  <img src="assets/images/news2.png" alt="" />
+                </div>
+                <div class="news__info">
+                  <div class="news__date">25 мая 2022</div>
+                  <div class="news__title">
+                    Компания Kingspan передаёт свои активы в России в управление
+                    российскому менеджменту
+                  </div>
+                  <div class="news__more">
+                    <a class="news__btn link link-border" href="#"
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

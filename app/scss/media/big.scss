@@ -1,4 +1,28 @@
 @media (min-width: 1000px) and (max-width: 1399px) {
+  p {
+    font-size: 18px;
+  }
+  .link {
+    font-size: 16px;
+  }
+
+  .header {
+    &__navigation {
+      justify-content: flex-end;
+    }
+    &__tel {
+      position: absolute;
+      right: 0px;
+      top: 10px;
+    }
+    &__additional {
+      position: absolute;
+      top: 15px;
+      right: 200px;
+      color: $color-additional;
+    }
+  }
+
   .produce {
     &__item {
       padding-bottom: 27px;
@@ -36,7 +60,7 @@
       padding-left: 30px;
       padding-right: 25px;
       padding-bottom: 27px;
-    } 
+    }
     &__item:nth-child(odd) {
       margin-right: 16px;
     }
@@ -54,6 +78,84 @@
     }
     &__item {
       font-size: 16px;
+    }
+  }
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__descr {
+      margin-top: 50px;
+      margin-right: 152px;
+      font-size: 16px;
+    }
+    &__stats {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-right: 100px;
+      & li:not(:first-child) {
+        padding-left: 30px;
+      }
+    }
+    &__info {
+      font-size: 16px;
+    }
+    &__image-block {
+      width: 310px;
+      .about__image--big {
+        display: unset;
+      }
+    }
+    &__image:not(.about__image--big) {
+      display: none;
+    }
+  }
+
+  .clients {
+    padding: 60px 0;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+  }
+
+  .request {
+    padding: 80px 20px;
+  }
+
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    &__left {
+      flex-basis: 40%;
+      flex-direction: column;
+      padding-right: 130px;
+    }
+    &__right {
+      flex-basis: 60%;
+    }
+    &__header-block {
+      margin-right: 0px;
+    }
+    &__item:nth-child(odd) {
+      margin-right: 77px;
+    }
+    &__telmail {
+      margin-top: 100px;
+    }
+    &__mail {
+      margin-top: 16px;
+    }
+  }
+
+  .news {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__image-block {
+      margin-right: 82px;
     }
   }
 }
