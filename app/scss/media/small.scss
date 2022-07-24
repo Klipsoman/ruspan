@@ -214,10 +214,71 @@
     }
   }
 
+  // Projects
+  .projects {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__more {
+      padding-top: 20px;
+      right: initial;
+    }
+  }
+
+  .info {
+    position: relative;
+    top: -4px;
+    padding-top: 10px;
+    opacity: 1;
+    background-color: #7f8f9f;
+    &__item {
+      font-size: 10px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+
+  .arrow-btns {
+    display: none;
+  }
+
+  .reviews {
+    &__content {
+      grid-template-columns: repeat(1, 1fr);
+      position: relative;
+    }
+    &__review {
+      font-size: 16px;
+    }
+    &__more-reviews {
+      display: block;
+      position: absolute;
+      left: 0;
+      padding-top: 30px;
+    }
+  }
+
+  .reviewer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    &__info {
+      margin-top: 20px;
+      margin-left: 0;
+      font-size: 16px;
+    }
+    &__position {
+      margin-bottom: 30px;
+    }
+  }
+
+  // About
+
   .about {
     padding-top: 40px;
     padding-bottom: 40px;
     &__content {
+      position: relative;
       margin-top: 30px;
       flex-direction: column-reverse;
     }
@@ -274,6 +335,9 @@
 
   .reviews {
     padding: 40px 0;
+    &__arrows {
+      display: none;
+    }
   }
 
   .clients {
@@ -361,6 +425,70 @@
     }
     &__title {
       font-size: 22px;
+    }
+    &__more {
+      font-size: 16px;
+    }
+    &__all {
+      margin-top: 20px;
+    }
+  }
+
+  .main-footer {
+    padding-bottom: 20px;
+    &__bottom {
+      padding-bottom: 0px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+        "PRIVACY"
+        "COOKIE"
+        "RIGHTS"
+        "LOGO";
+      margin-top: 0;
+      & > *:not(:first-child) {
+        margin-bottom: 15px;
+      }
+    }
+    &__logo {
+      grid-area: LOGO;
+      margin-top: 40px;
+    }
+    &__privacy {
+      grid-area: PRIVACY;
+    }
+    &__cookie {
+      grid-area: COOKIE;
+    }
+    &__rights {
+      grid-area: RIGHTS;
+    }
+    &__link {
+      font-size: 14px;
+    }
+  }
+
+  .footer-menu {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__list > li > ul > li > a {
+    }
+    &__list > li {
+      margin-bottom: 40px;
+    }
+  }
+
+  .modal-form {
+    padding-right: 0px;
+    padding-left: 0px;
+    &__close {
+      right: 20px;
+      top: 20px;
+      width: 23px;
+      height: 23px;
+      & span {
+        width: 23px;
+      }
     }
   }
 }

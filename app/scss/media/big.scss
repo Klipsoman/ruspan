@@ -2,9 +2,9 @@
   p {
     font-size: 18px;
   }
-  .link {
-    font-size: 16px;
-  }
+  // .link {
+  //   font-size: 16px;
+  // }
 
   .header {
     &__navigation {
@@ -70,6 +70,7 @@
   }
 
   .sector {
+    padding: 60px 0;
     &__left {
       padding-right: 38px;
     }
@@ -77,6 +78,45 @@
       padding-top: 14px;
     }
     &__item {
+      font-size: 16px;
+    }
+  }
+
+  // Projects
+
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .swiper {
+    &-slide {
+      min-height: 258px;
+    }
+  }
+  .info {
+    padding-bottom: 15px;
+    padding-left: 20px;
+    &__item:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+  }
+
+  // Reviews
+
+  .reviews {
+    &__review {
+      font-size: 16px;
+    }
+    &__arrows {
+      left: 50%;
+      bottom: -40px;
+    }
+  }
+  .reviewer {
+    &__info {
       font-size: 16px;
     }
   }
@@ -156,6 +196,40 @@
     padding-bottom: 120px;
     &__image-block {
       margin-right: 82px;
+    }
+    &__more {
+      font-size: 16px;
+    }
+  }
+
+  .main-footer {
+    padding-bottom: 40px;
+    &__bottom {
+      font-size: 13px;
+    }
+    &__link {
+      font-size: 13px;
+    }
+  }
+
+  .footer-menu {
+    &__list > li > ul > li > a {
+      font-size: 13px;
+      color: #585858;
+    }
+  }
+
+  .modal-form {
+    padding-right: 20px;
+    padding-left: 20px;
+    &__close {
+      right: 15px;
+      top: 15px;
+      width: 23px;
+      height: 23px;
+      & span {
+        width: 23px;
+      }
     }
   }
 }

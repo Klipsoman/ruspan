@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -402,7 +406,175 @@
       <section class="projects">
         <div class="container">
           <h2 class="projects__header section-header">Выполненные проекты</h2>
-          <div class="projects__slider slider"></div>
+          <div class="projects__content">
+            <!-- Swiper -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="swiper__image-block">
+                    <img
+                      class="slider-img"
+                      src="assets/images/project1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="info">
+                    <div class="info__item">
+                      Клиент
+                      <div class="info__title">Х5 Group</div>
+                    </div>
+                    <div class="info__item">
+                      Проект
+                      <div class="info__title">
+                        Распределительный центр «Пятерочка»
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrow-btns">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="projects__more">
+              <a href="" class="link link-arrow">Все проекты</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -525,9 +697,30 @@
                 конкретные выводы, разумеется, превращены в посмешище, хотя само
                 их существование приносит несомненную пользу.»
               </div>
-              <div class="reviews__arrows arrows">
-                <div class="arrows__left"></div>
-                <div class="arrows__right"></div>
+              <div class="reviews__arrows">
+                <div
+                  class="custom-arrow custom-arrow-disabled reviews__arrows-prev"
+                >
+                  <span class="custom-arrow__line custom-arrow__midline"></span>
+                  <span
+                    class="custom-arrow__line custom-arrow__upline-prev"
+                  ></span>
+                  <span
+                    class="custom-arrow__line custom-arrow__downline-prev"
+                  ></span>
+                </div>
+                <div class="custom-arrow reviews__arrows-next">
+                  <span class="custom-arrow__line custom-arrow__midline"></span>
+                  <span
+                    class="custom-arrow__line custom-arrow__upline-next"
+                  ></span>
+                  <span
+                    class="custom-arrow__line custom-arrow__downline-next"
+                  ></span>
+                </div>
+              </div>
+              <div class="reviews__more-reviews">
+                <a class="link link-arrow" href="">Больше отзывов</a>
               </div>
             </div>
           </div>
@@ -610,7 +803,9 @@
                 </form>
                 <div class="request__policy">
                   Нажимая на кнопку «Оставить заявку», вы соглашаетесь с
-                  Политикой конфиденциальности
+                  <a class="request__policy-link" href=""
+                    >Политикой конфиденциальности</a
+                  >
                 </div>
               </div>
             </div>
@@ -713,9 +908,227 @@
                 </div>
               </div>
             </div>
+            <div class="news__all">
+              <a class="link link-arrow" href="">Все новости</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-footer">
+          <div class="container">
+            <div class="main-footer__content">
+              <div class="main-footer__top footer-menu">
+                <ul class="footer-menu__list">
+                  <li>
+                    <a class="link link-border" href="">О компании</a>
+                    <ul>
+                      <li>
+                        <a class="link link-border" href=""
+                          >О компании Ruspan</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href="">Наша история</a>
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Наше производство</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Документы и сертификаты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href="">Сотрудничество</a>
+                      </li>
+                      <li><a class="link link-border" href="">Карьера</a></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="link link-border" href="">Продукция</a>
+                    <ul>
+                      <li>
+                        <a class="link link-border" href="">Сэндвич-панели</a>
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Теплоизоляционные плиты</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Быстровозводимые здания и прогонные системы</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Профлист и металлочерепица</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Проектирование, техническая поддержка, шеф-монтаж</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="link link-border" href="">Секторы рынка</a>
+                    <ul>
+                      <li>
+                        <a class="link link-border" href="">Торговые здания</a>
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Логистические здания и склады</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Производственные здания</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Административные и общественные здания</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Сельскохозяйственные здания</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Спортивные сооружения</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Холодильные здания и комплексы</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Пищевые производства</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a class="link link-border" href="">Проекты</a>
+                    <ul>
+                      <li>
+                        <a class="link link-border" href="">Объекты Ruspan</a>
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""
+                          >Отзывы и благодарности</a
+                        >
+                      </li>
+                      <li>
+                        <a class="link link-border" href=""><br /></a>
+                      </li>
+                      <li><a class="link link-border" href="">Новости</a></li>
+                      <li>
+                        <a class="link link-border" href=""><br /></a>
+                      </li>
+                      <li><a class="link link-border" href="">Контакты</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-footer__bottom">
+                <a class="main-footer__logo" href="">
+                  <img src="assets/images/footer-logo.svg" alt="footer-logo" />
+                </a>
+                <div class="main-footer__privacy">
+                  <a class="main-footer__link link link-border" href=""
+                    >Политика конфиденциальности</a
+                  >
+                </div>
+                <div class="main-footer__cookie">
+                  <a class="main-footer__link link link-border" href=""
+                    >Политика использования Cookie</a
+                  >
+                </div>
+                <div class="main-footer__rights">
+                  <span>© Ruspan, 2022. Все права защищены.</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
     </div>
+
+    <div class="modal-form" id="modal-form">
+      <div class="modal-form__body">
+        <div class="request">
+          <div class="container">
+            <div class="request__content">
+              <div class="request__left">
+                <h2 class="request__header section-header">Оставьте заявку</h2>
+                <p class="request__descr">
+                  Наши менеджеры ответят на ваши вопросы, рассчитают стоимость
+                  услуг и подготовят индивидуальное коммерческое предложение
+                </p>
+              </div>
+              <div class="request__right">
+                <form class="request__form form" action="">
+                  <div class="form__item">
+                    <input class="form__input" type="text" placeholder="Имя*" />
+                  </div>
+                  <div class="form__item">
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Телефон*"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <input
+                      class="form__input"
+                      type="mail"
+                      placeholder="E-mail*"
+                    />
+                  </div>
+                  <div class="form__item">
+                    <textarea
+                      class="form__textarea"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="Сообщение"
+                    ></textarea>
+                  </div>
+                  <button class="form__btn" type="submit">
+                    Оставить заявку
+                  </button>
+                </form>
+                <div class="request__policy">
+                  Нажимая на кнопку «Оставить заявку», вы соглашаетесь с
+                  <a class="request__policy-link" href=""
+                    >Политикой конфиденциальности</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-form__close">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -46,7 +46,7 @@ function scripts() {
     ])
       // .pipe(concat('app.min.js')) // Конкатенируем в один файл
       // .pipe(uglify()) // Сжимаем JavaScript
-      .pipe(dest("app/assets/js/")) // Выгружаем готовый файл в папку назначения
+      .pipe(dest("app/assets/js/index.js")) // Выгружаем готовый файл в папку назначения
       .pipe(browserSync.stream())
   ); // Триггерим Browsersync для обновления страницы
 }
@@ -55,7 +55,7 @@ function startwatch() {
   // Выбираем все файлы JS в проекте, а затем исключим с суффиксом .min.js
   watch(["app/**/*.js"], scripts);
   // Мониторим файлы препроцессора на изменения
-  watch("app/" + preprocessor + "/**/*", styles);
+  watch("app/**/*.scss", styles);
   // Мониторим файлы HTML на изменения
   watch("app/**/*.html").on("change", browserSync.reload);
   // Мониторим папку-источник изображений и выполняем images(), если есть изменения
@@ -64,7 +64,7 @@ function startwatch() {
 
 function styles() {
   return (
-    src("app/" + preprocessor + "/style." + preprocessor) // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
+    src("app/" +  "/style." + preprocessor) // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
     // src("app/" + preprocessor + "/style." + preprocessor + "") // Выбираем источник: "app/sass/main.sass" или "app/less/main.less"
       .pipe(eval("sass")()) // Преобразуем значение переменной "preprocessor" в функцию
       // .pipe(concat('app.min.css')) // Конкатенируем в файл app.min.js
@@ -87,7 +87,7 @@ function buildcopy() {
       // Выбираем нужные файлы
       "app/*.css",
       "app/assets/fonts/*.ttf",
-      "app/js/**/*.js",
+      "app/assets/**/*.js",
       // 'app/dest/images/**/*',
       "app/**/*.html",
     ],
