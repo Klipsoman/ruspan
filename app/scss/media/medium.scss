@@ -82,6 +82,11 @@
         background-color: $color-border;
       }
     }
+    &__tel {
+      & .telephone__desktop {
+        display: none;
+      }
+    }
   }
 
   .inner {
@@ -184,6 +189,9 @@
     }
     &__item {
       padding: 24px 15px 25px 20px;
+      &:hover {
+        background-color: initial;
+      }
     }
     &__item:nth-child(odd) {
       margin-right: 10px;
@@ -205,6 +213,7 @@
       display: block;
       &__header {
         font-size: $font-size-header-lap;
+        margin-bottom: 30px;
       }
       &__slider {
         margin-top: 30px;
@@ -219,6 +228,9 @@
         margin-top: 20px;
         font-size: 16px;
       }
+      &__image {
+        width: 100%;
+      }
     }
   }
 
@@ -227,24 +239,25 @@
   .projects {
     padding-bottom: 45px;
     padding-top: 45px;
-    &__more {
+    &__arrows-btns {
+      display: none;
+    }
+    &__keys {
+      display: block;
       padding-top: 20px;
-      right: initial;
     }
-  }
-
-
-  .info {
-    position: relative;
-    top: -4px;
-    padding-top: 10px;
-    opacity: 1;
-    background-color: #7F8F9F;
-    &__item{
-      font-size: 10px;
-    }
-    &__title {
-      font-size: 16px;
+    & .projects__info {
+      position: relative;
+      top: -4px;
+      padding-top: 10px;
+      opacity: 1;
+      background-color: #7F8F9F;
+      &__item{
+        font-size: 10px;
+      }
+      &__title {
+        font-size: 16px;
+      }
     }
   }
 

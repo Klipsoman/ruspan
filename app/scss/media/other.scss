@@ -1,0 +1,41 @@
+@media (min-width: 1000px) and (max-width: 1010px) {
+  // Homepage
+
+  // projects
+  .projects {
+    .swiper-slide {
+      &__info {
+        bottom: 6px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1011px) and (max-width: 1150px) {
+  // Homepage
+
+  // projects
+  .projects {
+    .swiper-slide {
+      &__info {
+        bottom: 5px;
+      }
+    }
+  }
+  
+}
+
+@media (min-width: 1151px) {
+  // Homepage
+
+  // projects
+  .projects {
+    .swiper-slide {
+      &__info {
+        bottom: 4px;
+      }
+    }
+  }
+  
+}

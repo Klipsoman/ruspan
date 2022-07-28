@@ -87,20 +87,23 @@
   .projects {
     padding-top: 60px;
     padding-bottom: 60px;
+    &__keys {
+      padding-top: 35px;
+    }
   }
   .swiper {
     &-slide {
       min-height: 258px;
     }
-  }
-  .info {
-    padding-bottom: 15px;
-    padding-left: 20px;
-    &__item:not(:last-child) {
-      margin-bottom: 34px;
-    }
-    &__title {
-      font-size: 16px;
+    & .projects__info {
+      padding-bottom: 15px;
+      padding-left: 20px;
+      &__item:not(:last-child) {
+        margin-bottom: 34px;
+      }
+      &__title {
+        font-size: 16px;
+      }
     }
   }
 

@@ -1,18 +1,18 @@
-<svg width="60" height="74" viewBox="0 0 60 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="3.5" width="55" height="67" rx="7.5" stroke="#C09A5D"/>
-<rect x="5.5" y="8.5" width="45" height="57" rx="4.5" stroke="#C09A5D"/>
-<rect x="15.5" y="0.5" width="25" height="12" fill="white" stroke="#C09A5D"/>
-<circle cx="45.5" cy="59.5" r="14" fill="white" stroke="#C09A5D"/>
-<path d="M39 59.5L45 65.5L52.5 55.5" stroke="#C09A5D"/>
-<line x1="12" y1="20.5" x2="31" y2="20.5" stroke="#C09A5D"/>
-<line x1="38" y1="20.5" x2="44" y2="20.5" stroke="#C09A5D"/>
-<line x1="12" y1="27.5" x2="26" y2="27.5" stroke="#C09A5D"/>
-<line x1="38" y1="27.5" x2="44" y2="27.5" stroke="#C09A5D"/>
-<line x1="12" y1="34.5" x2="33" y2="34.5" stroke="#C09A5D"/>
-<line x1="12" y1="56.5" x2="24" y2="56.5" stroke="#C09A5D"/>
-<line x1="12" y1="43.5" x2="15" y2="43.5" stroke="#C09A5D"/>
-<line x1="18" y1="43.5" x2="21" y2="43.5" stroke="#C09A5D"/>
-<line x1="24" y1="43.5" x2="27" y2="43.5" stroke="#C09A5D"/>
-<line x1="30" y1="43.5" x2="33" y2="43.5" stroke="#C09A5D"/>
-<line x1="38" y1="34.5" x2="44" y2="34.5" stroke="#C09A5D"/>
+<svg width="61" height="75" viewBox="0 0 61 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5 4H9C4.58172 4 1 7.58172 1 12V64C1 68.4183 4.58172 72 9 72H38.5M41.5 4H49C53.4183 4 57 7.58172 57 12V51" stroke="#C09A5D"/>
+<path d="M16.5 9H11C8.23858 9 6 11.2386 6 14V62C6 64.7614 8.23858 67 11 67H34M41.5 9H47C49.7614 9 52 11.2386 52 14V47.5" stroke="#C09A5D"/>
+<rect x="16.5" y="0.5" width="25" height="12" stroke="#C09A5D"/>
+<circle cx="46.5" cy="60.5" r="14" stroke="#C09A5D"/>
+<path d="M40 60.5L46 66.5L53.5 56.5" stroke="#C09A5D"/>
+<line x1="13" y1="21.5" x2="32" y2="21.5" stroke="#C09A5D"/>
+<line x1="39" y1="21.5" x2="45" y2="21.5" stroke="#C09A5D"/>
+<line x1="13" y1="28.5" x2="27" y2="28.5" stroke="#C09A5D"/>
+<line x1="39" y1="28.5" x2="45" y2="28.5" stroke="#C09A5D"/>
+<line x1="13" y1="35.5" x2="34" y2="35.5" stroke="#C09A5D"/>
+<line x1="13" y1="57.5" x2="25" y2="57.5" stroke="#C09A5D"/>
+<line x1="13" y1="44.5" x2="16" y2="44.5" stroke="#C09A5D"/>
+<line x1="19" y1="44.5" x2="22" y2="44.5" stroke="#C09A5D"/>
+<line x1="25" y1="44.5" x2="28" y2="44.5" stroke="#C09A5D"/>
+<line x1="31" y1="44.5" x2="34" y2="44.5" stroke="#C09A5D"/>
+<line x1="39" y1="35.5" x2="45" y2="35.5" stroke="#C09A5D"/>
 </svg>

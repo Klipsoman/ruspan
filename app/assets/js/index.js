@@ -37,12 +37,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     modalForm.classList.remove('modal-form__visible');
   }
 
-  const swiper = new Swiper(".swiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-
+  // init sliders 
+  const projectsSwiper = new Swiper("#projects__swiper", {
     slidesPerView: 3,
     slidesPerGroup: 3,
     spaceBetween: 21,
@@ -55,7 +51,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         slidesPerGroup: 1,
       },
       640: {
-        slidesPerView: 2.2,
+        slidesPerView: 3.2,
         spaceBetween: 10,
         slidesPerGroup: 2,
       },
@@ -65,4 +61,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
       },
     },
   });
+
+  const sectorSwiper = new Swiper("#sector__swiper", {
+    slidesPerView: 1.2,
+    slidesPerGroup: 1,
+    spaceBetween: 21,
+    autoHeight: true,
+  });
+
+
 });

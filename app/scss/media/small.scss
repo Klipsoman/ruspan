@@ -3,8 +3,6 @@
     font-size: 16px;
   }
   .container {
-    min-width: 320px;
-    max-width: 639px;
     padding: 0 10px;
   }
   .section-header {
@@ -108,7 +106,7 @@
       font-size: $font-size-header-lap;
     }
     &__btn {
-      width: 300px;
+      width: 100%;
     }
   }
 
@@ -170,6 +168,9 @@
     }
     &__item {
       padding: 24px 14px 25px 20px;
+      &:hover {
+        background-color: initial;
+      }
     }
     &__item:nth-child(odd) {
       margin-right: 0px;
@@ -191,6 +192,7 @@
     &-mobile {
       &__header {
         font-size: $font-size-header-lap;
+        margin-bottom: 20px;
       }
       display: block;
       padding-top: 40px;
@@ -204,7 +206,7 @@
         margin-right: 10px;
       }
       &__image {
-        max-width: 260px;
+        width: 100%;
       }
       &__title {
         display: block;
@@ -218,23 +220,25 @@
   .projects {
     padding-top: 40px;
     padding-bottom: 40px;
-    &__more {
+    &__arrows-btns {
+      display: none;
+    }
+    &__keys {
+      display: block;
       padding-top: 20px;
-      right: initial;
     }
-  }
-
-  .info {
-    position: relative;
-    top: -4px;
-    padding-top: 10px;
-    opacity: 1;
-    background-color: #7f8f9f;
-    &__item {
-      font-size: 10px;
-    }
-    &__title {
-      font-size: 16px;
+    & .projects__info {
+      position: relative;
+      top: -4px;
+      padding-top: 10px;
+      opacity: 1;
+      background-color: #7f8f9f;
+      &__item {
+        font-size: 10px;
+      }
+      &__title {
+        font-size: 16px;
+      }
     }
   }
 
@@ -273,7 +277,6 @@
   }
 
   // About
-
   .about {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -316,7 +319,7 @@
       }
     }
     &__image-block {
-      width: 295px;
+      width: 100%;
       .about__image--small {
         display: unset;
       }
@@ -390,6 +393,9 @@
     &__item:nth-child(odd) {
       margin-right: 0px;
     }
+    &__item:nth-child(2) {
+      order: 1;
+    }
     &__telmail {
       margin-top: 40px;
       font-size: 22px;
@@ -413,7 +419,7 @@
       flex-direction: column;
     }
     &__image-block {
-      width: 300px;
+      width: 100%;
       height: 126px;
       margin-right: 0;
     }
