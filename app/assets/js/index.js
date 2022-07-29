@@ -1,8 +1,11 @@
+import { checkMobile } from "./checkMobile.js";
+
 document.addEventListener("DOMContentLoaded", (e) => {
+  // Homepage scripts
   const header = document.querySelector("#header");
   const headerContent = header.querySelector(".header__content");
   const burgerBtn = header.querySelector("#burger-btn");
-  const menuMobile = header.querySelector(".header__menu-mobile");
+
   const innerBtn = document.querySelector('.inner__btn');
   const modalForm = document.querySelector('#modal-form');
   const closeModalFormBtn = document.querySelector('#modal-form .modal-form__close');
@@ -15,18 +18,40 @@ document.addEventListener("DOMContentLoaded", (e) => {
     headerContent.style.borderBottom = "none";
   });
 
+  // Проверка устройства
+  if (checkMobile.isMobile()) {
+    let menuItems = header.querySelectorAll('.header__navigation > ul > li');
+    let itemsFiltered = [...menuItems].filter((item) => {
+      // есть ли подменю
+      return item.children[1] ? true : false;
+    });
+
+    itemsFiltered.forEach((item) => {
+      item.classList.add('hasSubmenu');
+      item.addEventListener('click', (e) => {
+        item.classList.toggle('submenu-active');
+      })
+    })
+
+    document.body.classList.add('_mobile');
+  } else {
+    document.body.classList.add('_desktop');
+  }
+
+  // Mobile menu 
   burgerBtn.addEventListener("click", (e) => {
-    if (burgerBtn.classList.contains("open")) {
-      burgerBtn.classList.remove("open");
-      menuMobile.classList.remove("open");
+    if (headerContent.classList.contains("menuopen")) {
+      burgerBtn.classList.remove("menuopen");
+      headerContent.classList.remove('menuopen');
       document.body.style.overflowY = "";
       return;
     }
-    burgerBtn.classList.add("open");
-    menuMobile.classList.add("open");
+    burgerBtn.classList.add("menuopen");
+    headerContent.classList.add('menuopen');
     document.body.style.overflowY = "hidden";
   });
   
+  // Modal
   innerBtn.addEventListener("click", (e) => {
     modalForm.classList.add('modal-form__visible');
   })
@@ -39,6 +64,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   // init sliders 
   const projectsSwiper = new Swiper("#projects__swiper", {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     slidesPerView: 3,
     slidesPerGroup: 3,
     spaceBetween: 21,
@@ -68,6 +97,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
     spaceBetween: 21,
     autoHeight: true,
   });
-
 
 });

@@ -15,10 +15,12 @@
   }
 
   .header {
-    min-height: auto;
-    height: 55px;
+    min-height: 55px;
     &__content {
-      display: none;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      justify-content: space-between;
+      align-items: center;
       &-mobile {
         display: block;
         display: flex;
@@ -28,50 +30,130 @@
         padding: 15px 0;
       }
     }
-    &__logo-mobile {
-      position: relative;
-      z-index: 100;
+    &__content.menuopen {
+      & .header__additional {
+        display: block;
+        position: fixed;
+        bottom: 25px;
+        left: 25px;
+        top: auto;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          left: -15px;
+          right: 10px;
+          top: -20px;
+          background-color: $color-border;
+        }
+      }
+      & .header__navigation {
+          top: 57px;
+          left: 0;
+          right: 0;
+          bottom: 159px;
+          background-color: #F0F5Fb;
+          overflow: auto;
+      }
+      & .header__tel {
+          display: block;
+          position: fixed;
+          bottom: 97px;
+          left: 30px;
+          & .telephone__mobile {
+            display: initial;
+          }
+      }
+      & .header__additional-box {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #f0f5fb;
+        height: 159px;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          left: 10px;
+          right: 10px;
+          background-color: $color-border;
+        }
+      }
+    }
+    &__logo {
+      display: block;
       max-width: 115px;
+      min-width: auto;
+      position: relative;
+      top: 2px;
+      z-index: 100;
       flex-shrink: 0;
       & img {
         width: 100%;
         height: auto;
       }
     }
-    &__menu-mobile {
-      position: fixed;
-      width: 100%;
-      top: -1000px;
-      left: 0;
-      right: 0;
-      height: 0%;
-      background-color: $bgc-mobile;
-      opacity: 0;
-      transition: ease 1s;
-      &.open {
-        position: fixed;
-        top: 55px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-wrap: wrap;
-        height: 100%;
-        opacity: 1;
-        background-color: $bgc-mobile;
-      }
+    &__additional {
+      display: none;
+    }
+    &__tel {
+      display: none;
+    }
+    &__burger {
+      display: block;
     }
     &__navigation {
+      position: fixed;
+      top: -500vh;
+      left: 0;
+      right: 0;
       flex-basis: 100%;
       padding: 0;
+      justify-content: flex-start;
       flex-direction: column;
-      & ul {
+      & > ul {
         flex-direction: column;
         align-items: flex-start;
-        & li {
-          padding: 50px 30px;
+        & > li {
+          width: 100%;
+          padding: 15px 30px;
         }
-        & li:not(:last-child) {
+        & a {
+          display: block;
+        }
+        & > li > ul {
+          display: none;
+          transition: none;
+        }
+        & > li:hover > ul {
+          opacity: 0;
+          visibility: hidden;
+        } 
+        & > li.submenu-active > ul {
+          display: block;
+          position: static;
+          visibility: visible;
+          opacity: 1;
+        }
+        & > li.hasSubmenu.submenu-active {
+          padding-bottom: 0;
+        }
+        & > li.hasSubmenu::after {
+          content: url('../../assets/images/arrow-menu.svg');
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          transform: rotateZ(180deg);
+        }
+        & > li.hasSubmenu.submenu-active::after {
+          content: url('../../assets/images/arrow-menu.svg');
+          transform: rotateZ(360deg);
+        }
+        & > li:first-child {
+          padding-top: 30px;
+        }
+        & > li:not(:last-child) {
           margin-right: 0;
         }
       }
@@ -85,6 +167,12 @@
     }
     &__tel-mobile {
       border-bottom: 1px solid $color-border;
+    }
+    &__tel {
+      display: none;
+      & .telephone__desktop {
+        display: none;
+      }
     }
   }
 
@@ -485,8 +573,8 @@
   }
 
   .modal-form {
-    padding-right: 0px;
-    padding-left: 0px;
+
+    padding: 30px 0;
     &__close {
       right: 20px;
       top: 20px;
@@ -495,6 +583,9 @@
       & span {
         width: 23px;
       }
+    }
+    & .request {
+      padding: 30px 0;
     }
   }
 }
